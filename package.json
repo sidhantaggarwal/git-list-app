@@ -1,0 +1,22 @@
+{
+  "name": "yinzcamapp",
+  "version": "1.0.0",
+  "description": "A webapp to retireve users from git api and render it",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Sidhant Aggarwal",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "core-js": "^3.7.0",
+    "parse-link-header": "^1.0.1",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
