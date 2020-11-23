@@ -42,14 +42,16 @@ class UserView extends View{
           </div>
 
          
-        <div class="gituser__ingredients">
+        <div class="gituser__users">
           <h2 class="heading--2">List of Repositories</h2>
-		  <ul class="gituser__ingredient-list">
+		  <ul class="gituser__user-list">
 		  
 		  	${this._reposData.map(repos => {
 			return `
-				<li class="gituser__ingredient">
-              
+				<li class="gituser__user">
+        <svg class="gituser__icon">
+        <use href="${icons}#icon-check"></use>
+        </svg>
 			  <div class="gituser__description">
                 <a href =${repos.html_url} target = _blank class="gituser__link"><span class="gituser__unit">${repos.name}</span></a>
                 
@@ -62,7 +64,7 @@ class UserView extends View{
 
         <div class="gituser__directions">
           <h2 class="heading--2">Followers</h2>
-          <ul class="gituser__ingredient-list">
+          <ul class="gituser__user-list">
 		  
 		  	${this._followersData.map(fD => {
 			return `

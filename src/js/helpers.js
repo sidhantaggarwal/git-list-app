@@ -21,6 +21,8 @@ export const getJSON = async function(url){
 	}
 }
 
+//github api Link header was not returning last header for dynamic pagination.
+//I ll try to send the screenshot over email or upload it on github
 export const getJSONSince = async function (url){
 	try{
 	const response = await Promise.race([fetch(url),timeout(TIMEOUT_SEC)]);

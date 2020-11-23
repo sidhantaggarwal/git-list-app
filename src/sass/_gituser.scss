@@ -1,7 +1,7 @@
 .gituser {
   background-color: $color-grey-light-1;
 
-  ///////////
+  
   // FIGURE
   &__fig {
     height: 20rem;
@@ -66,7 +66,7 @@
   
   
 
-  ///////////
+ 
   // DETAILS
   &__details {
     display: flex;
@@ -123,8 +123,9 @@
     }
   }
 
-  ///////////
-  // INGREDIENTS
+  
+  // Main User View
+   
 
   &__link{
     color:black;
@@ -133,28 +134,30 @@
 
   }
 
-  &__ingredients {
-    padding: 5rem 8rem;
+  &__users {
+      padding: 5rem 8rem;
     font-size: 1.6rem;
     line-height: 1.4;
     background-color: $color-grey-light-2;
     display: flex;
-    flex-direction: coloumn;
+    flex-direction: column;
     align-items: center;
+   
   }
 
-  &__ingredient-list {
+  &__user-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem 1rem;
+    gap: 2.5rem 3rem;
     list-style: none;
-    
+   
+     
   }
 
-  &__ingredient {
+  &__user {
     display: flex;
-    margin: 3%;
-    width:150%;
+    
+   
   }
 
   &__icon {
