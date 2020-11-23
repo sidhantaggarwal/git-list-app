@@ -29,6 +29,7 @@ export const getJSONSince = async function (url){
 	if (response.ok){
 	const parsedlinkHeader = parseLinkHeader(response.headers.get('Link'));
 	parsedlinkHeader.next.per_page=20;
+	
 	return data;
 	}
 	if(!response.ok) throw new Error(`Getting a Response From API Failed (${response.status})`);
